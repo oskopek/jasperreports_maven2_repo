@@ -1,5 +1,8 @@
 #!/bin/bash
-cd $HOME
-wget -r --no-parent http://jasperreports.sourceforge.net/maven2/
-mkdir $HOME/jasper-mirror/
-mv $HOME/jasperreports.sourceforge.net/maven2/* $HOME/jasper-mirror/
+export DIR=$HOME/temp_jasper/
+export TARGET=$HOME/jasper-mirror/
+mkdir $DIR
+cd $DIR
+wget -r --page-requisites --convert-links --no-parent http://jasperreports.sourceforge.net/maven2/
+mkdir $TARGET
+mv $DIR/jasperreports.sourceforge.net/* $TARGET
