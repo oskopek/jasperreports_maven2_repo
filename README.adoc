@@ -1,0 +1,3 @@
+= jasperreports_maven2_repo mirror
+
+A mirror hosted previously at http://httpd-oskopek.rhcloud.com/maven2/ for pulling jasperreports artifacts from Travis.
